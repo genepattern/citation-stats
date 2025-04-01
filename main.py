@@ -25,7 +25,8 @@ def load_wos_query_spreadsheet(fp):
         gsea = pd.read_excel(fp, engine='openpyxl')
     else:
         raise ValueError("Unsupported file format. Please provide a .csv, .tsv, or .xlsx file.")
-    
+    if len(gsea.columns) > 7:
+        raise ValueError(f'Spreadsheet should have only 7 columns, in this order: {columns}')
     gsea.columns = columns
     gsea['Impact Factor'] = None
     return gsea

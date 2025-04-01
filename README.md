@@ -1,6 +1,6 @@
 This repo contains code to generate the impact factor spreadsheet. 
 
-Steps to create impact factor spreadsheet: 
+### Steps to create impact factor spreadsheet: 
 1. Go to WoS and query for citation information.
 2. Download to endnote & run checks.
 3. Export to .xlsx, format, and make sure the spreadsheet has the following columns:
@@ -11,6 +11,7 @@ Steps to create impact factor spreadsheet:
 6. Download the .xlsx file, color, format, sort by descending impact factor or year if requested by Jill.
 
 
-Notes: 
+### Notes: 
 - If impact factor is 0, it means that that journal either has no impact factor or is not included in the JCR report.
 - On WoS, if looking for papers that cite a specific paper, make sure that you aren't looking for papers that cite the paper that cite the specific paper.
+- After getting the results from WoS and running checks using Endnote, the exported excel workbook might have multiple sheets. Make sure you stitch them together into 1 sheet before loading them onto the module to run. 
